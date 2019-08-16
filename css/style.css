@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    background-color: #333333;
+}
+nav {
+    display: flex;
+    background-color: #262626;
+    height: 100px;
+    padding: 5px;
+}
+nav > div {
+    background-color: #4d4d4d;
+    margin: 5px;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav > div.logo,
+nav > div.menu {
+    width: 300px;
+}
+nav > div.title {
+    width: calc(100vw - 640px);
+}
+nav > div.menu-burger{
+    display: none;
+}
+.boxes {
+    width: calc(100vw - 620px);
+    /* margin-top: 20px; */
+    margin: auto;
+    margin-top: 20px;
+}
+/* .boxes > div{
+    width: 100%;
+    box-sizing: border-box;
+} */
+.box1{
+    background-color: #666666;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+.box1-1 {
+    column-count: 2;
+}
+.box2 {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.box2 > div {
+    height: 400px;
+    width: calc(33vw - 215px);
+    float: left;
+    background-color: #4d4d4d;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.box2 > div > p:last-child {
+    float: right;
+}
+
+.myClass{
+    /* background-color: goldenrod !important; */
+    width: 400px !important;
+    transition: width 2s;
+    -webkit-transition: width 2s;
+    -moz-transition: width 2s;
+    -ms-transition: width 2s;
+    -o-transition: width 2s;
+}
+
+@media only screen and (max-width: 1200px) {
+    nav > div.logo,
+    nav > div.menu {
+        display: none;
+    }
+    nav > div.title {
+        width: calc(100vw - 100px);
+    }
+    nav > div.menu-burger{
+        display: block;
+    }
+}

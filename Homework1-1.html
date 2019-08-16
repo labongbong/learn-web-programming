@@ -5,61 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    
-    <style>
-        body {
-            margin: 0;
-            background-color: #333333;
-        }
-        nav {
-            display: flex;
-            background-color: #262626;
-            height: 100px;
-            padding: 5px;
-        }
-        nav > div {
-            background-color: #4d4d4d;
-            margin: 5px;
-            color: white;
-            font-size: 25px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .logo, .menu {
-            width: 305px;
-        }
-        .title {
-            width: calc(100% - 610px);
-        }
-        .box1{
-            background-color: #666666;
-            height: 200px;
-            padding: 10px;
-        }
-        .box1-1 {
-            column-count: 2;
-        }
-        .boxes {
-            margin-right: 315px;
-            margin-left: 315px;
-            margin-top: 20px;
-        }
-        .box2 {
-            margin-top: 5px;
-        }
-        .box2 > div {
-            height: 400px;
-            width: calc(33% - 13px);
-            float: left;
-            background-color: #4d4d4d;
-            margin: 5px;
-            padding: 5px;
-        }
-        .box2 > div > p:last-child {
-            float: right;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
     <!-- logo하고 menu에 300px 줬는데 폭 고정 안돼요.. logo 대신에 nav>div:first-child 했는데 좀 다른것같아요 -->
 </head>
 <body>
@@ -68,6 +18,7 @@
             <div class="logo">Logo</div>
             <div class="title">Website Title</div>
             <div class="menu">Menu</div>
+            <div class="menu-burger">Menu</div>
         </nav>
     </div>
     <div class="boxes">
@@ -82,7 +33,7 @@
                 <p>The column-count property specifies the number of columns an element should be divided into. The following example will divide the text in theelement into 3 columns: </p>
                 <p>End</p>
             </div>
-            <div>
+            <div id="myBox">
                 <h2>Definition and Usage</h2>
                 <p>The column-count property specifies the number of columns an element should be divided into. The following example will divide the text in theelement into 3 columns: </p>
                 <p>The column-count property specifies the number of columns an element should be divided into. The following example will divide the text in theelement into 3 columns: </p>
@@ -126,5 +77,6 @@
             </div>
         </div>
     </div>
+    <script src="js/sample.js"></script>
 </body>
 </html>
